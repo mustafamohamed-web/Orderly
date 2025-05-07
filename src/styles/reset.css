@@ -42,7 +42,7 @@ ol {
 
 /* Make images easier to work with */
 img {
-  max-width: 80%;
+  max-width: 100%;
   display: block;
 }
 

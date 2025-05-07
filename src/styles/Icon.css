@@ -1,11 +1,15 @@
 .icon {
-    width:8rem;
+    width:10rem;
 }
 
-.touch {
-    fill: var(--color-primary);
+.icon.logo {
+  width: 15rem;
+  height: 15rem;
+  fill: white;
+  margin-bottom: 1rem;
 }
 
-.logo{
-    fill: var(--color-secondary);
+.icon.touch {
+  fill: var(--color-primary);
+  margin-left: 10px;
 }
