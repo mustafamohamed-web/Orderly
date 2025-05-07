@@ -1,0 +1,13 @@
+.service-selection {
+  justify-content: space-evenly;
+}
+
+/* .service-selection,
+.header,
+.icon.logo {
+  fill: var(--color-primary);
+} */
+
+.service-selection h1 {
+  color: var(--color-primary);
+}

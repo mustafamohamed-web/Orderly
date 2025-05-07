@@ -1,5 +1,9 @@
 @import './variables.css'; 
+@import './layout.css'; 
 @import './reset.css'; 
 @import './icon.css'; 
 @import './fonts.css'; 
+@import './animation.css'; 
 @import './views/homeScreen.css'; 
+@import './views/serviceSelection.css'; 
+@import './components/serviceCards.css'; 

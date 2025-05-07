@@ -1,12 +1,14 @@
 <template>
-  <HomeScreen/>
-
-  <IconSprite />
-  
-
+  <div class="app">
+    <router-view v-slot="{ Component }">
+      <transition name="page" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
+    <IconSprite />
+  </div>
 </template>
 
 <script setup>
-import { IconSprite, SvgIcon} from '@/components'
-import { HomeScreen } from '@/views'
+import { IconSprite } from '@/components'
 </script>

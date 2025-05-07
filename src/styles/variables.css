@@ -1,84 +1,84 @@
 :root {
   /* Base font size - 16px is browser default */
   font-size: 16px;
-  
+
   /* Color Palette */
-  --color-primary: #E3703E;      /* Orange - Headers, buttons */
-  --color-primary-dark: #D35F41; /* Darker orange for hover states */
-  --color-primary-light: #FF8F71; /* Lighter orange for backgrounds */
-  
-  --color-secondary: #FFFFFF;    /* White */
-  --color-secondary-dark: #F5F5F5; /* Light gray for backgrounds */
-  --color-secondary-light: #FAFAFA; /* Lighter gray for hover states */
-  
+  --color-primary: #e3703e; /* Orange - Headers, buttons */
+  --color-primary-dark: #d35f41; /* Darker orange for hover states */
+  --color-primary-light: #ff8f71; /* Lighter orange for backgrounds */
+
+  --color-secondary: #ffffff; /* White */
+  --color-secondary-dark: #f5f5f5; /* Light gray for backgrounds */
+  --color-secondary-light: #fafafa; /* Lighter gray for hover states */
+
   --color-text-primary: #333333; /* Dark gray for main text */
   --color-text-secondary: #777777; /* Medium gray for secondary text */
   --color-text-tertiary: #999999; /* Light gray for placeholder text */
-  
-  --color-border: #EEEEEE;      /* Light gray for borders */
-  --color-success: #4CAF50;     /* Green for success states */
-  --color-warning: #FFC107;     /* Yellow for warning states */
-  --color-error: #F44336;       /* Red for error states */
-  --color-info: #2196F3;        /* Blue for info states */
-  
+
+  --color-border: #eeeeee; /* Light gray for borders */
+  --color-success: #4caf50; /* Green for success states */
+  --color-warning: #ffc107; /* Yellow for warning states */
+  --color-error: #f44336; /* Red for error states */
+  --color-info: #2196f3; /* Blue for info states */
+
   /* Typography */
   --font-family-primary: 'Arial', sans-serif;
-  
-  --font-size-xxs: 0.625rem;    /* 10px - Extra small text */
-  --font-size-xs: 0.75rem;      /* 12px - Extra small text */
-  --font-size-sm: 1.875rem;     /* 14px - Small text */
-  --font-size-md: 2rem;         /* 16px - Medium text (body) */
-  --font-size-lg: 3.125rem;     /* 18px - Large text */
-  --font-size-xl: 4.375rem;     /* 22px - Extra large text */
-  --font-size-xxl: 4.75rem;     /* 28px - XX Large */
-  --font-size-xxxl: 5.25rem;    /* 36px - XXX Large */
-  
-  --font-weight-regular: 400;   /* Regular weight */
-  --font-weight-medium: 500;    /* Medium weight */
-  --font-weight-bold: 700;      /* Bold weight */
-  --font-weight-bolder: 900;   
-  
-  --line-height-tight: 1.2;     /* Tight line height for headings */
-  --line-height-normal: 1.5;    /* Normal line height for body text */
-  --line-height-loose: 1.8;     /* Loose line height for readability */
-  
+
+  --font-size-xxs: 0.625rem; /* 10px - Extra small text */
+  --font-size-xs: 0.75rem; /* 12px - Extra small text */
+  --font-size-sm: 1.875rem; /* 14px - Small text */
+  --font-size-md: 2rem; /* 16px - Medium text (body) */
+  --font-size-lg: 3.125rem; /* 18px - Large text */
+  --font-size-xl: 4.375rem; /* 22px - Extra large text */
+  --font-size-xxl: 4.75rem; /* 28px - XX Large */
+  --font-size-xxxl: 5.25rem; /* 36px - XXX Large */
+
+  --font-weight-regular: 400; /* Regular weight */
+  --font-weight-medium: 500; /* Medium weight */
+  --font-weight-bold: 700; /* Bold weight */
+  --font-weight-bolder: 900;
+
+  --line-height-tight: 1.2; /* Tight line height for headings */
+  --line-height-normal: 1.5; /* Normal line height for body text */
+  --line-height-loose: 1.8; /* Loose line height for readability */
+
   /* Spacing */
-  --spacing-xxs: 0.25rem;       /* 4px - Smallest spacing */
-  --spacing-xs: 0.5rem;         /* 8px - Extra small spacing */
-  --spacing-sm: 0.75rem;        /* 12px - Small spacing */
-  --spacing-md: 1rem;           /* 16px - Medium spacing (standard) */
-  --spacing-lg: 1.5rem;         /* 24px - Large spacing */
-  --spacing-xl: 2rem;           /* 32px - Extra large spacing */
-  --spacing-xxl: 3rem;          /* 48px - XX Large spacing */
-  --spacing-xxxl: 4rem;         /* 64px - XXX Large spacing */
-  
+  --spacing-xxs: 0.25rem; /* 4px - Smallest spacing */
+  --spacing-xs: 0.5rem; /* 8px - Extra small spacing */
+  --spacing-sm: 0.75rem; /* 12px - Small spacing */
+  --spacing-md: 1rem; /* 16px - Medium spacing (standard) */
+  --spacing-lg: 1.5rem; /* 24px - Large spacing */
+  --spacing-xl: 2rem; /* 32px - Extra large spacing */
+  --spacing-xxl: 3rem; /* 48px - XX Large spacing */
+  --spacing-xxxl: 4rem; /* 64px - XXX Large spacing */
+
   /* Borders */
-  --border-radius-sm: 0.25rem;  /* 4px - Small radius */
-  --border-radius-md: 0.5rem;   /* 8px - Medium radius (cards) */
-  --border-radius-lg: 0.75rem;  /* 12px - Large radius (buttons) */
-  --border-radius-xl: 1rem;     /* 16px - Extra large radius */
+  --border-radius-sm: 0.25rem; /* 4px - Small radius */
+  --border-radius-md: 0.5rem; /* 8px - Medium radius (cards) */
+  --border-radius-lg: 0.75rem; /* 12px - Large radius (buttons) */
+  --border-radius-xl: 1rem; /* 16px - Extra large radius */
   --border-radius-pill: 62.5rem; /* 1000px - Pill shaped radius */
-  
+
   --border-width-thin: 0.0625rem; /* 1px - Thin border */
   --border-width-thick: 0.125rem; /* 2px - Thick border */
-  
+
   /* Shadows */
   --shadow-sm: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.05);
   --shadow-md: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
   --shadow-xl: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.1);
-  
+
   /* Animation */
   --transition-fast: 0.15s ease;
   --transition-normal: 0.3s ease;
   --transition-slow: 0.5s ease;
-  
+
   /* Layout */
-  --content-width-sm: 40rem;    /* 640px */
-  --content-width-md: 48rem;    /* 768px */
-  --content-width-lg: 64rem;    /* 1024px */
-  --content-width-xl: 80rem;    /* 1280px */
-  
+  --content-width-sm: 40rem; /* 640px */
+  --content-width-md: 48rem; /* 768px */
+  --content-width-lg: 64rem; /* 1024px */
+  --content-width-xl: 80rem; /* 1280px */
+
   /* Z-index */
   --z-index-dropdown: 1000;
   --z-index-sticky: 1020;
@@ -98,7 +98,12 @@ body {
   background-color: var(--color-secondary-dark);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
@@ -130,14 +135,66 @@ h6 {
 
 /* Utility Classes */
 
-.header-main{
-font-size: ;
+.center-coloumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.center-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.full-height {
+  width: 100vw;
+  height: 100vh;
 }
 .text-center {
   text-align: center;
 }
+.mb-sm {
+  margin-bottom: 0.5rem;
+}
+
+.mb-md {
+  margin-bottom: 1rem;
+}
+
+.mb-lg {
+  margin-bottom: 1.5rem;
+}
+
+.mb-xl {
+  margin-bottom: 2rem;
+}
+
+.mb-2xl {
+  margin-bottom: 3rem;
+}
+
+.pb-sm {
+  padding-bottom: 0.5rem;
+}
+
+.pb-md {
+  padding-bottom: 1rem;
+}
+
+.pb-lg {
+  padding-bottom: 1.5rem;
+}
+
+.pb-xl {
+  padding-bottom: 2rem;
+}
+
+.pb-2xl {
+  padding-bottom: 3rem;
+}
 
 .text-primary {
+  fill: var(--color-primary);
   color: var(--color-primary);
 }
 
@@ -152,24 +209,7 @@ font-size: ;
 .bg-secondary {
   background-color: var(--color-secondary);
 }
-
-.shadow {
-  box-shadow: var(--shadow-md);
-}
-
-.rounded {
-  border-radius: var(--border-radius-md);
-}
-
-.rounded-lg {
-  border-radius: var(--border-radius-lg);
-}
-
-.rounded-pill {
-  border-radius: var(--border-radius-pill);
-}
-
-.full-height {
-  width: 100vw;
-  height: 100vh;
+ 
+.color-text-primary {
+  color: var(--color-text-primary);
 }

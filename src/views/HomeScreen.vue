@@ -1,8 +1,7 @@
 <template>
-  <div class="home-screen">
+  <div class="home-screen full-height" @click="touch">
     <div class="logo-header">
-      <SvgIcon tag="logo" css="icon logo" />
-      <h1>Orderly</h1>
+      <HeaderArea :colour="'#ffffff'" />
     </div>
     <div class="main-meal">
       <img src="@/assets/main-burger.png" alt="Restaurant Logo" />
@@ -13,6 +12,14 @@
     </div>
   </div>
 </template>
+
 <script setup>
-import { SvgIcon } from '@/components'
+import { SvgIcon, HeaderArea } from '@/components'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+function touch() {
+  router.push('/serviceSelection')
+}
 </script>
