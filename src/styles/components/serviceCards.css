@@ -4,7 +4,7 @@
 }
 
 .card {
-  border: var(--color-text-secondary) solid 2px;
+  border: var(--color-text-tertiary) solid 2px;
   border-radius: 2rem;
   padding: 2rem;
   width: 30rem;

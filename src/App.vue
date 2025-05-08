@@ -1,7 +1,7 @@
 <template>
   <div class="app">
-    <router-view v-slot="{ Component }">
-      <transition name="page" mode="out-in">
+    <router-view v-slot="{ Component,route }">
+      <transition :name="route.meta.transition || 'page'" mode="out-in">
         <component :is="Component" />
       </transition>
     </router-view>
@@ -11,4 +11,5 @@
 
 <script setup>
 import { IconSprite } from '@/components'
+
 </script>

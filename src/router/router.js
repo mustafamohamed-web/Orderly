@@ -5,12 +5,13 @@ import { HomeScreen, ServiceSelection} from '@/views'
 const routes = [
   {
     path: '/',
-    component: HomeScreen
+    component: HomeScreen,
+    meta: { transition: 'page' }
   },
   {
     path: '/serviceSelection',
-    name: 'serviceSelection',
-    component: ServiceSelection
+    component: ServiceSelection,
+    meta: { transition: 'page' }
   }
 ]
 
