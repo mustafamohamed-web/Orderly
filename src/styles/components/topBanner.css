@@ -1,0 +1,39 @@
+.top-banner {
+    padding: 2rem;
+}
+
+.top-banner h4 {
+    margin-bottom: 2rem;
+}
+
+.sub-categories {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-categories li {
+    cursor: pointer;
+    padding: 0.7rem 1.5rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    color: #666;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.sub-categories li:hover {
+    background-color: var(--color-primary);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(255, 169, 169, 0.3);
+}
+
+.sub-categories li.active {
+    background-color: var(--color-primary);
+    color: white;
+}

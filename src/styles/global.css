@@ -6,4 +6,8 @@
 @import './animation.css'; 
 @import './views/homeScreen.css'; 
 @import './views/serviceSelection.css'; 
+@import './views/menuItemList.css'; 
 @import './components/serviceCards.css'; 
+@import './components/categoryList.css'; 
+@import './components/productList.css'; 
+@import './components/topBanner.css'; 

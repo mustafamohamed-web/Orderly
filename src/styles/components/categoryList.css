@@ -1,0 +1,49 @@
+.category-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  gap: 5rem;
+  border-right: 1px solid #f0f0f0;
+  background-color: white;
+  height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.center-coloumn {
+  justify-content: flex-start;
+}
+
+.header {
+  padding-top: 3rem;
+}
+
+ul {
+  padding: 0;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.categories:hover {
+  transform: translateY(-2px);
+}
+
+.category-name {
+  order: 2;
+  transition: transform 0.3s ease;
+}
+
+.categories:hover .category-name {
+  transform: scale(1.05);
+}

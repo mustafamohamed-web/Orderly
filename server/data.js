@@ -20,6 +20,13 @@ const data = {
       description: 'Classic burgers made with quality ingredients',
       displayOrder: 3,
       isActive: true
+    },
+    {
+      name: 'Sides',
+      image: '/images/fries.jpg',
+      description: 'Classic burgers made with quality ingredients',
+      displayOrder: 4,
+      isActive: true
     }
   ],
 

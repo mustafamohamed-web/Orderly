@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { HomeScreen, ServiceSelection} from '@/views'
-
+import { HomeScreen, ServiceSelection, MenuItemList } from '@/views'
 
 const routes = [
   {
@@ -11,6 +10,11 @@ const routes = [
   {
     path: '/serviceSelection',
     component: ServiceSelection,
+    meta: { transition: 'page' }
+  },
+  {
+    path: '/menuItemList',
+    component: MenuItemList,
     meta: { transition: 'page' }
   }
 ]
