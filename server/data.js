@@ -22,6 +22,13 @@ const data = {
       isActive: true
     },
     {
+      name: 'Wraps',
+      image: '/images/chicken-wrap.jpg',
+      description: 'Classic burgers made with quality ingredients',
+      displayOrder: 4,
+      isActive: true
+    },
+    {
       name: 'Sides',
       image: '/images/fries.jpg',
       description: 'Classic burgers made with quality ingredients',
@@ -166,6 +173,113 @@ const data = {
       image: '/images/t-mcdonalds-McDouble.jpg',
       available: true,
       ingredients: ['Beef patties', 'American cheese', 'Pickles', 'Onions', 'Ketchup', 'Mustard', 'Bun']
+    },
+    {
+      category: 'Burgers',
+      name: 'Crispy Chicken Sandwich',
+      description: 'Crispy chicken fillet with lettuce and mayo on a bun',
+      price: 2.5,
+      nutritionInfo: {
+        calories: 470,
+        protein: 27,
+        carbs: 45,
+        fat: 20
+      },
+      image: '/images/fried-chicken-burger.jpg',
+      available: true,
+      ingredients: ['Chicken patties', 'American cheese', 'Pickles', 'Onions', 'Ketchup', 'Mustard', 'Bun']
+    },
+    {
+      category: 'Burgers',
+      name: 'Grilled Chicken Sandwich',
+      description: 'Grilled chicken fillet with lettuce and mayo on a bun',
+      price: 2.5,
+      nutritionInfo: {
+        calories: 470,
+        protein: 27,
+        carbs: 45,
+        fat: 20
+      },
+      image: '/images/grilled-chicken-burger.jpg',
+      available: true,
+      ingredients: ['Chicken patties', 'American cheese', 'Pickles', 'Onions', 'Ketchup', 'Mustard', 'Bun']
+    },
+    {
+      category: 'Sides',
+      name: 'Mozzarella Sticks',
+      description: 'Crispy mozzarella sticks with marinara sauce',
+      price: 2,
+      nutritionInfo: {
+        calories: 300,
+        protein: 12,
+        carbs: 30,
+        fat: 15
+      },
+      image: '/images/mozzerella-sticks.jpg',
+      available: true,
+      description: 'Grilled chicken fillet with lettuce and mayo on a bun',
+      ingredients: ['Mozzarella cheese', 'Bread crumbs', 'Marinara sauce']
+    },
+    {
+      category: 'Sides',
+      name: 'Fries',
+      description: 'Crispy French fries',
+      price: 1.5, 
+      nutritionInfo: {
+        calories: 300,
+        protein: 12,
+        carbs: 30,
+        fat: 15
+      },
+      image: '/images/fries.jpg',
+      available: true,
+      description: 'Grilled chicken fillet with lettuce and mayo on a bun',
+      ingredients: ['Mozzarella cheese', 'Bread crumbs', 'Marinara sauce']
+    },
+    {
+      category: 'Wraps',
+      name: 'Bbq Chicken Wrap',
+      description: 'Grilled chicken with BBQ sauce, lettuce, and cheese in a tortilla wrap',
+      price: 2.5,
+      nutritionInfo: {
+        calories: 350,
+        protein: 25,
+        carbs: 40,
+        fat: 15
+      },
+      image: '/images/bbq-wrap.png',
+      available: true,
+      ingredients: ['Grilled chicken', 'BBQ sauce', 'Lettuce', 'Cheddar cheese', 'Tortilla wrap']
+    },
+    {
+      category: 'Wraps',
+      name: 'Chicken Wrap',
+      description: 'Grilled chicken, lettuce, and cheese in a tortilla wrap',
+      price: 2.5,
+      nutritionInfo: {
+        calories: 350,
+        protein: 25,
+        carbs: 40,
+        fat: 15
+      },
+      image: '/images/chicken-wrap.jpg',
+      available: true,
+      ingredients: ['Grilled chicken', 'BBQ sauce', 'Lettuce', 'Cheddar cheese', 'Tortilla wrap']
+    },
+    {
+      category: 'Breakfast',
+      name: 'Egg mcMuffin',
+      description: 'Grilled chicken, lettuce, and cheese in a tortilla wrap',
+      price: 3.5,
+      nutritionInfo: {
+        calories: 350,
+        protein: 25,
+        carbs: 40,
+        fat: 15
+      },
+      image: '/images/eggmcmuffin.jpg',
+      available: true,
+      ingredients: ['Grilled chicken', 'BBQ sauce', 'Lettuce', 'Cheddar cheese', 'Tortilla wrap']
     }
   ]
 }

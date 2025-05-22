@@ -4,8 +4,16 @@
       <SvgIcon tag="logo" css="icon touch" />
       <h4>Orderly</h4>
     </div>
+    <div class="back-home">
+      <p>Home</p>
+      <SvgIcon @click="home" tag="home" css="icon mini-icon" />
+    </div>
+    <div class="back-home">
+      <p @click="displayAllergen">Allergens</p>
+      <SvgIcon tag="hazard" css="icon mini-icon" />
+    </div>
     <ul>
-      <li v-for="category in categories" class="categories">
+      <li v-for="category in store.categories" :key="category.id" @click="store.selectCategory(category._id)">
         <p class="category-name">{{ category.name }}</p>
         <img :src="category.image" class="category-image" alt="category image" />
       </li>
@@ -14,34 +22,27 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted,inject } from 'vue'
 import { SvgIcon } from '@/components'
-import api from '@/services/api'
-const categories = ref([])
-const loading = ref(true)
-const error = ref(null)
+import { useRouter } from 'vue-router'
+import { useCategoriesStore } from '@/stores/categories'
 
-const fetchCategories = async () => {
-  try {
-    loading.value = true
-    error.value = null
+const router = useRouter()
+const store = useCategoriesStore()
 
-    const response = await api.getCategories()
-    console.log(response)
-
-    // Your backend response structure
-    if (response.success) {
-      categories.value = response.data
-    } else {
-      throw new Error('Failed to fetch categories')
-    }
-  } catch (err) {
-    console.error('Error fetching categories:', err)
-    error.value = 'Failed to load categories. Please try again.'
-  } finally {
-    loading.value = false
+const props = defineProps({
+  displayAllergen: {
+    type: Function,
+    required: true
   }
-}
+})
 
-onMounted(fetchCategories)
+onMounted(() => {
+  store.fetchCategories()
+})
+
+
+function home() {
+  router.push('/')
+}
 </script>

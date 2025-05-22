@@ -1,15 +1,16 @@
 .menu-item-list {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 3fr;
     height: 100vh;
     width: 100vw;
 }
-.logo-header{
-    height: 20%;
-}
 
-.main-meal {
+
+.menu-item-main-meal {
     bottom:-15%;
 }
 
-.main-meal img{
+.menu-item-main-meal img{
     width: 25rem;
 }

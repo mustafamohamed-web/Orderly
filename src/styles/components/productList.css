@@ -1,8 +1,105 @@
-.product-list{
-    position: relative;
-    bottom: 5rem;
-    left: 20rem;
-    margin-top: 5rem;
-    height: 70vh;
-    width: 70%;
+.product-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  position: relative;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+  padding-right: 10px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 3rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+.product-image{
+  align-self: center;
+}
+.product-name{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.product-description {
+  font-size: 1.5rem;
+
+}
+
+.price {
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.loading-state,
+.error-state,
+.empty-state {
+  padding: 2rem;
+  text-align: center;
+}
+
+.allergen-card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem;
+  background-color: var(--color-light);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  height: 100%;
+}
+
+.allergen-card__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 2rem;
+}
+.allergen-card__footer button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 15rem;
+}
+.allergen-card__footer button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.hazard{
+  fill: var(--color-primary);
 }

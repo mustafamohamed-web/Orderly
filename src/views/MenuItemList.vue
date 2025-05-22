@@ -1,16 +1,27 @@
 <template>
-  <div class="menu-item-list">
-    <div class="logo-header">
-      <div class="main-meal">
-        <img src="@/assets/main-burger.png" alt="Restaurant Logo" />
-      </div>
+  <transition name="fade" mode="out-in">
+    <div v-if="!displayAllergenInfo" class="menu-item-list">
+      <CategoryList :displayAllergen="displayAllergen" />
+      <ProductList />
     </div>
-
-    <CategoryList/>
-    <ProductList />
-  </div>
+    <div v-else class="menu-item-list">
+      <AllergenCard @close="closeAllergenCard" />
+    </div>
+  </transition>
 </template>
 
 <script setup>
-import { CategoryList, ProductList } from '@/components'
+import { CategoryList, ProductList, AllergenCard } from '@/components'
+import { ref } from 'vue'
+
+const displayAllergenInfo = ref(false)
+
+function displayAllergen() {
+  displayAllergenInfo.value = true
+  console.log('displayAllergenInfo', displayAllergenInfo.value)
+}
+
+function closeAllergenCard() {
+  displayAllergenInfo.value = false
+}
 </script>
